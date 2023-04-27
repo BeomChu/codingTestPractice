@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class No2903 {
 
-    public void method() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
@@ -15,4 +15,5 @@ public class No2903 {
         }
         System.out.println(dotSize * dotSize);
     }
+
 }
