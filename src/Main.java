@@ -1,16 +1,16 @@
+import programmers.ParkWalk;
 import programmers.Race;
 
 public class Main {
     public static void main(String[] args) {
 
-        Race race = new Race();
+        ParkWalk pw = new ParkWalk();
+        String[] park = {"OOO", "OSO", "OOO"};
+        String[] routes = {"E 2","S 2","W 1"};
 
-        String[] players = {"mumu", "soe", "poe", "kai", "mine"};
-        String[] callings = {"kai", "kai", "mine", "mine"};
-
-        String[] solution = race.solution(players, callings);
-        for (String s : solution) {
-            System.out.println(s);
+        int[] solution = pw.solution(park, routes);
+        for (int i : solution) {
+            System.out.println("i = " + i);
         }
 
     }
